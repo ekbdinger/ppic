@@ -374,10 +374,13 @@ function ppic_field_default_fields() {
   $fields['node-ppic_program-field_ppic_specialty'] = array(
     'field_config' => array(
       'active' => '1',
-      'cardinality' => '1',
+      'cardinality' => '10',
       'deleted' => '0',
       'entity_types' => array(),
       'field_name' => 'field_ppic_specialty',
+      'field_permissions' => array(
+        'type' => 0,
+      ),
       'foreign keys' => array(),
       'indexes' => array(
         'value' => array(
@@ -399,6 +402,7 @@ function ppic_field_default_fields() {
           'GA' => 'Gastroenterology',
         ),
         'allowed_values_function' => '',
+        'allowed_values_php' => '',
       ),
       'translatable' => '0',
       'type' => 'list_text',
@@ -406,8 +410,10 @@ function ppic_field_default_fields() {
     'field_instance' => array(
       'bundle' => 'ppic_program',
       'default_value' => NULL,
+      'default_value_function' => '',
+      'default_value_php' => '',
       'deleted' => '0',
-      'description' => '',
+      'description' => 'Hold down the Ctrl button to select multiple specialities',
       'display' => array(
         'default' => array(
           'label' => 'above',
@@ -556,6 +562,7 @@ function ppic_field_default_fields() {
   // Included for use with string extractors like potx.
   t('Additional Info');
   t('File Attachments');
+  t('Hold down the Ctrl button to select multiple specialities');
   t('Link to the main program website');
   t('Links');
   t('Payer');

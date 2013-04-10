@@ -2,6 +2,7 @@ name = PPIC
 description = PPIC content type, view
 core = 7.x
 package = PPIC
+php = 5.2.4
 version = 7.x-1.0-alpha1
 project = ppic
 dependencies[] = features
