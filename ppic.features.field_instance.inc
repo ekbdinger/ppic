@@ -79,8 +79,8 @@ function ppic_field_default_field_instances() {
     'settings' => array(
       'description_field' => 0,
       'file_directory' => 'ppic/programs',
-      'file_extensions' => 'txt zip pdf doc xlsx',
-      'max_filesize' => '10 MB',
+      'file_extensions' => 'txt zip pdf docx doc',
+      'max_filesize' => '',
       'user_register_form' => FALSE,
     ),
     'widget' => array(
