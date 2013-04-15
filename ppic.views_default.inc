@@ -33,7 +33,10 @@ function ppic_views_default_views() {
   $handler->display->display_options['query']['type'] = 'views_query';
   $handler->display->display_options['exposed_form']['type'] = 'basic';
   $handler->display->display_options['pager']['type'] = 'full';
-  $handler->display->display_options['pager']['options']['items_per_page'] = '10';
+  $handler->display->display_options['pager']['options']['items_per_page'] = '50';
+  $handler->display->display_options['pager']['options']['offset'] = '0';
+  $handler->display->display_options['pager']['options']['id'] = '0';
+  $handler->display->display_options['pager']['options']['quantity'] = '9';
   $handler->display->display_options['style_plugin'] = 'table';
   $handler->display->display_options['style_options']['columns'] = array(
     'field_ppic_state' => 'field_ppic_state',
@@ -98,6 +101,8 @@ function ppic_views_default_views() {
   $handler->display->display_options['fields']['field_ppic_state']['id'] = 'field_ppic_state';
   $handler->display->display_options['fields']['field_ppic_state']['table'] = 'field_data_field_ppic_state';
   $handler->display->display_options['fields']['field_ppic_state']['field'] = 'field_ppic_state';
+  $handler->display->display_options['fields']['field_ppic_state']['group_rows'] = FALSE;
+  $handler->display->display_options['fields']['field_ppic_state']['delta_offset'] = '0';
   /* Field: Content: Specialty */
   $handler->display->display_options['fields']['field_ppic_specialty']['id'] = 'field_ppic_specialty';
   $handler->display->display_options['fields']['field_ppic_specialty']['table'] = 'field_data_field_ppic_specialty';
